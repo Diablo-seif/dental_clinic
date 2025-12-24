@@ -1,0 +1,100 @@
+<odoo>
+    <template id="report_patient_prescription_2">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <header>
+                                             <!-- الرأس -->
+                        <div style="padding: 0px 10px ; position: relative; direction: rtl; font-family: 'Cairo', 'Arial', sans-serif;">
+                            <div style="display: flex; align-items: center; flex-direction: row-reverse; margin-bottom: 20px; padding-bottom: 15px;  border-bottom: 4px solid #003366;">
+                                <!-- اللوجو -->
+                                <div style="width: 30%; text-align: center;">
+                                    <img src="/dental_clinic/static/description/icon.png"
+                                         style="width: 180px; height: 180px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"/>
+                                </div>
+                                <!-- بيانات العيادة -->
+                                <div style="width: 70%; text-align: right; padding-right: 20px;">
+                                    <h1 style="font-size: 32px; margin: 8px  0px 0px 0px ; color: #003366; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">عيادة برايت سمايل</h1>
+                                    <h2 style="font-size: 24px; margin: 8px 20px 0px 0px ; color: #005c99;">د/ عبد الله رزق السيد</h2>
+                                    <p  style="font-size: 18px; margin: 8px 10px 0px 0px ; color: #444;">طبيب وجراح الفم و الأسنان</p>
+                                    <p  style="font-size: 18px; margin: 8px 90px 0px 0px ; color: #666;">(جامعة القاهرة - القصر العيني)</p>
+                                </div>
+                            </div>
+                            <!-- معلومات المريض -->
+                            <div style="margin-bottom:15px; display:flex; justify-content:space-between; font-size:18px; padding:12px 20px 0px 0px; background:#f0f8ff; border-radius:8px; border:2px solid #003366;">
+                                <!-- الاسم -->
+                                <h3 style="padding-right:80px; text-align:right; color:#003366;">
+                                    <span style="font-weight:bold;">الاسم: </span>
+                                    <span style="unicode-bidi: plaintext; direction:ltr; display:inline-block; min-width:60px;"> <t t-esc="o.name"/> </span>
+                                </h3>
+
+                                <!-- التاريخ -->
+                                <h3 style="padding-left:50px; text-align:left; color:#003366;">
+                                    <span style="font-weight:bold;">التاريخ:</span>
+                                    <t t-esc="time.strftime('%Y-%m-%d')"/>
+                                </h3>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <div style="padding: 15px; position: relative; direction: rtl; font-family: 'Cairo', 'Arial', sans-serif; background-color: #ffffff;">
+                            <!-- الجدول -->
+                            <div style="margin: 0 auto 30px; width: 90%;">
+                                <table style="width: 100%; border-collapse: collapse; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 15px; background: #003366; color: white; font-size: 20px; text-align: center; border: 1px solid #002244;">البديل</th>
+                                            <th style="padding: 15px; background: #003366; color: white; font-size: 20px; text-align: center; border: 1px solid #002244;">العلاج</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="o.treatment_prescription_ids" t-as="treat">
+                                            <tr>
+                                                <td style="padding: 12px; text-align: center; border: 1px solid #ddd; background: #f9f9f9; font-size: 18px;">
+                                                    <span t-esc="treat.alternative"/>
+                                                </td>
+                                                <td style="padding: 12px; text-align: center; border: 1px solid #ddd; background: #f9f9f9; font-size: 18px;">
+                                                    <span t-esc="treat.name"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="padding: 15px; text-align: right; border: 1px solid #ddd; background: #e6f2ff; font-size: 17px;">
+                                                    <div style="font-weight: bold; color: #003366; margin-right:100px; margin-bottom: 5px;">التعليمات:  <span style="margin-right:20px; unicode-bidi: bidi-override;" t-esc="treat.des"/> </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr t-if="not treat__last">
+                                                <td colspan="2" style="height: 10px; background: transparent; border: none;"> </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            </div>
+                        </main>
+                    <footer>
+                        <div style=" position: relative; direction: rtl; font-family: 'Cairo', 'Arial', sans-serif;">
+                                <div style="background: linear-gradient(to right, #00BFFF, #0080ff); padding: 10px 20px 20px 10px; text-align: center; border-radius: 8px; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); color: #003366;">
+                                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                            <p style="font-size: 20px; margin: 8px 0px 0px 200px ; font-weight: bold;">
+                                                    بلبيس - ش بورسعيد، برج الإمامين، أمام سمير بكري، أعلى مطعم الشايب
+                                            </p>
+                                            <p style="font-size: 20px; margin: 8px 0px 0px 40px ; direction: rtl; unicode-bidi: bidi-override;">
+                                                المواعيد يوميًا من 2 مساءً إلى 10 مساءً، ما عدا الجمعة
+                                            </p>
+                                            <p style="font-size: 20px; margin: 8px 35px 0px 0px ;">
+                                                    للحجز: 01003208084 / 0552843004
+                                            </p>
+                                            <p style="font-size: 20px; margin: 8px 0px 0px 0px ;">
+                                                    الاستشارة خلال أسبوعين من تاريخ الكشف
+                                            </p>
+                                    </div>
+                                </div>
+                        </div>
+                    </footer>
+                    </t>
+                </t>
+            </t>
+    </template>
+</odoo>

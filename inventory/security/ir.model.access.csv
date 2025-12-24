@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+
+access_product_inventory,product.inventory,model_product_inventory,inventory.inventory_clinic_user_groups,1,1,1,0
+access_product_inventory,product.inventory,model_product_inventory,inventory.inventory_clinic_manager_groups,1,1,1,1
+
+
+access_product_inventory_line,product.inventory.line,model_product_inventory_line,inventory.inventory_clinic_user_groups,1,1,1,0
+access_product_inventory_line,product.inventory.line,model_product_inventory_line,inventory.inventory_clinic_manager_groups,1,1,1,1
+
+
+access_vendor_inventory,vendor.inventory,model_vendor_inventory,inventory.inventory_clinic_user_groups,1,1,1,0
+access_vendor_inventory,vendor.inventory,model_vendor_inventory,inventory.inventory_clinic_manager_groups,1,1,1,1
+
+
+

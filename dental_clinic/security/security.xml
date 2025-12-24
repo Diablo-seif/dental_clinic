@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="patient_category" model="ir.module.category">
+            <field name="name">Dental Clinic</field>
+            <field name="sequence" eval="1"/>
+        </record>
+            <record id="dental_clinic_manager_groups" model="res.groups">
+                <field name="name">Dental Clinic Manager</field>
+                <field name="category_id" ref="patient_category"/>
+                <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            </record>
+
+            <record id="dental_clinic_reception_groups" model="res.groups">
+                <field name="name">Dental Clinic Reception</field>
+                <field name="category_id" ref="patient_category"/>
+                <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            </record>
+
+    </data>
+</odoo>

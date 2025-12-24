@@ -1,0 +1,264 @@
+<odoo>
+  <data>
+
+        <record id="view_patient_patient_form" model="ir.ui.view">
+                <field name="name">patient.patient.form</field>
+                <field name="model">patient.patient</field>
+                <field name="arch" type="xml">
+                    <form string="patient_form">
+                        <header>
+                        <!--                    class = (**    btn-primary  ->  perper **    ** btn-secondary -> white **    **  btn-success -> Green **)               -->
+                                <button name="back_state"   string="Back"  class="btn-primary" type="object"/> <!-- states="sold" -->
+                        <!--                   #####################################################################################################        -->
+                                <button name="change_state" string="Move"  class="btn-success" type="object"/>   <!-- attrs="{'invisible': [('state', '!=', False)]}"-->
+                        <!--                   #####################################################################################################        -->
+                            <field name="state" widget="statusbar"/>
+                        </header>
+                        <sheet>
+                                    <group>
+                                        <group>
+                                                <field name="name"/>
+                                        </group>
+                                        <group>
+                                                <field name="general_diagnosis_id"/>
+                                        </group>
+                                    </group>
+
+                                    <notebook>
+                                        <page string="Data">
+                                            <group string="Personal Information">
+                                                      <group>
+                                                            <field name="job_id"/>
+                                                            <field name="date_birth"/>
+
+                                                      </group>
+                                                      <group>
+                                                            <field name="phone"/>
+                                                           <field name="age"/>
+
+                                                      </group>
+                                            </group>
+
+                                                <group string="Medical Information">
+                                                    <group>
+                                                            <field name="blood_type"/>
+                                                    </group>
+                                                    <group>
+                                                            <field name="medical_history_ids" widget="many2many_tags"/>
+                                                    </group>
+                                                </group>
+
+                                        </page>
+                                        <page string="Booking" >
+                                            <field name="booking_line_ids">
+                                                <tree editable="bottom">
+                                                    <field name="booking_id"/>
+                                                    <field name="check_examination" />
+                                                    <field name="check_amount" readonly="1"/>
+                                                    <field name="doctor_id" optional="1"/>
+                                                    <field name="des"/>
+                                                    <field name="cost" />
+                                                    <field name="total_cost" sum="total_cost"/>
+                                                    <field name="pay" sum="total_pay" />
+                                                    <field name="difference" sum="difference" />
+                                                </tree>
+                                            </field>
+                                        </page>
+                                        <page string="Diagnoses">
+                                            <div style="position: relative; width: 80%; height: 300px; margin: auto; background: url('dental_clinic/static/description/teeth_teeth.svg') no-repeat center/contain;">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     viewBox="0 0 1300 600"
+                                                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+
+                                                    <!-- Upper teeth example -->
+                                                    <g id="upper-teeth" transform="translate(50,50)">
+                                                        <rect id="1"  x="65"  y="110" width="60" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="2"  x="154" y="110" width="60" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="3"  x="244" y="110" width="60" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="4"  x="332" y="120" width="38" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="5"  x="392" y="120" width="40" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="6"  x="450" y="120" width="40" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="7"  x="505" y="120" width="40" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="8"  x="559" y="110" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="9"  x="616" y="110" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="10" x="670" y="120" width="40" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="11" x="725" y="115" width="40" height="55" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="12" x="780" y="120" width="50" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="13" x="845" y="120" width="40" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="14" x="910" y="115" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="15" x="1002" y="115" width="60" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="16" x="1091" y="115" width="60" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+
+                                                    </g>
+
+                                                     Lower teeth example
+                                                    <g id="lower-teeth" transform="translate(50,120)">
+                                                        <rect id="32" x="63"    y="195" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="31" x="152"   y="195" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="30" x="242"   y="195" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="29" x="332"   y="185" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="28" x="395"   y="185" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="27" x="457"   y="185" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="26" x="515"   y="195" width="30" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="25" x="565"   y="195" width="30" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="24" x="620"   y="195" width="30" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="23" x="670"   y="195" width="30" height="50" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="22" x="720"   y="185" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="21" x="780"   y="185" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="20" x="844"   y="185" width="40" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="19" x="910"   y="195" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="18" x="1000"  y="195" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                        <rect id="17" x="1089"  y="195" width="65" height="60" rx="10"
+                                                              fill="transparent" fill-opacity="0.2" stroke="#000" stroke-width="0.0" cursor="pointer" onclick="toggleTooth(this)"/>
+                                                    </g>
+                                                </svg>
+
+
+                                                    <script type="text/javascript">
+                                                    function toggleTooth(elem) {
+                                                        if (elem.getAttribute('fill') === 'transparent') {
+                                                            elem.setAttribute('fill', 'red');
+                                                            elem.setAttribute('fill-opacity', '0.5');
+                                                        } else {
+                                                            elem.setAttribute('fill', 'transparent');
+                                                            elem.setAttribute('fill-opacity', '1');
+                                                        }
+                                                    }
+                                                    </script>
+                                            </div>
+
+                                            <field name="teeth_ids">
+                                                     <tree editable="bottom">
+                                                         <field name="teeth_code"/>
+                                                         <field name="teeth_title"/>
+                                                         <field name="des"/>
+                                                     </tree>
+                                                </field>
+                                        </page>
+                                        <page string="Treatment">
+                                            <field name="treatment_prescription_ids">
+                                                <tree editable="bottom">
+                                                    <field name="name"/>
+                                                    <field name="alternative"/>
+                                                    <field name="des"/>
+                                                </tree>
+                                            </field>
+                                        </page>
+                                    </notebook>
+
+                    </sheet>
+                        <div class="oe_chatter" groups="dental_clinic.dental_clinic_manager_groups">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+
+                    </form>
+                </field>
+            </record>
+
+        <record id="view_patient_patient_tree" model="ir.ui.view">
+        <field name="name">patient.patient.tree</field>
+        <field name="model">patient.patient</field>
+        <field name="arch" type="xml">
+          <tree>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="medical_history_ids" widget="many2many_tags"/>
+                <field name="difference"/>
+                <field name="state"/>
+          </tree>
+      </field>
+  </record>
+
+        <record id="view_patient_patient_kanban"   model="ir.ui.view">
+            <field name="name">patient.patient.kanban</field>
+            <field name="model">patient.patient</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_example">
+                    <field name="name"/>
+                    <field name="phone"/>
+                    <field name="difference"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_kanban_card">
+                                <div class="o_kanban_content">
+
+                                        <div style="margin-bottom:4px;">
+                                              👤 Person:  <field name="name"/>
+                                        </div>
+
+
+                                        <div style="margin-bottom:4px;">
+                                                🧾 General Diagnosis: <field name="general_diagnosis_id"/>
+                                        </div>
+
+                                        <div>
+                                                📱 Phone: <field name="phone"/>
+                                        </div>
+                                        <div>
+                                                 💰 Difference: <field name="difference"/>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+    </record>
+
+        <record id="view_patient_search" model="ir.ui.view">
+            <field name="name">patient.patient.search</field>
+            <field name="model">patient.patient</field>
+            <field name="arch" type="xml">
+                <search string="Search Patients">
+                    <!-- Search fields -->
+                    <field name="name" string="Name"/>
+                    <field name="phone" string="Phone"/>
+
+
+                </search>
+            </field>
+        </record>
+
+
+      <record id="action_patient_patient" model="ir.actions.act_window">
+          <field name="name">Patients</field>
+          <field name="res_model">patient.patient</field>
+          <field name="view_mode">kanban,tree,form</field>
+      </record>
+
+  </data>
+</odoo>

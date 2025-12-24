@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="inventory_category" model="ir.module.category">
+            <field name="name">Inventory Clinic</field>
+            <field name="sequence" eval="1"/>
+        </record>
+            <record id="inventory_clinic_manager_groups" model="res.groups">
+                <field name="name">Inventory Clinic Manager</field>
+                <field name="category_id" ref="inventory_category"/>
+                <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            </record>
+
+            <record id="inventory_clinic_user_groups" model="res.groups">
+                <field name="name">Inventory Clinic User</field>
+                <field name="category_id" ref="inventory_category"/>
+                <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            </record>
+    </data>
+</odoo>

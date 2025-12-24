@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <templates xml:space="preserve" owl="1"><!-- owl="1"-->
+        <t t-name="dental_clinic.dashboardXML">
+            <div class="o_dental_dashboard">
+                <h1>🦷 Welcome to Dental Clinic Dashboard</h1>
+            </div>
+        </t>
+    </templates>
+</odoo>

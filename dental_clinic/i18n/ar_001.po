@@ -1,0 +1,1018 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dental_clinic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-02 02:01+0000\n"
+"PO-Revision-Date: 2025-09-02 02:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#, python-format
+msgid "%s - %s"
+msgstr ""
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_needaction
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_needaction
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_needaction
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_exception_decoration
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_exception_decoration
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_exception_decoration
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_state
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_state
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_state
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_type_icon
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_type_icon
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_type_icon
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__age
+#, python-format
+msgid "Age"
+msgstr "العمر"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/treatment_prescription.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__alternative
+#, python-format
+msgid "Alternative Medicine"
+msgstr "العلاج البديل"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_attachment_count
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_attachment_count
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_attachment_count
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "Back"
+msgstr "للخلف"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__date_birth
+#, python-format
+msgid "Birth Date"
+msgstr "تاريخ الميلاد"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__booking_id
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__booking_line_ids
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_form
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+#, python-format
+msgid "Booking"
+msgstr "الحجز"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__day
+#, python-format
+msgid "Booking Day"
+msgstr "يوم الحجز"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_line_form
+msgid "Booking Line"
+msgstr "سطر الحجز"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_line_tree
+msgid "Booking Lines"
+msgstr "سطور الحجز"
+
+#. module: dental_clinic
+#: model:ir.actions.act_window,name:dental_clinic.actions_booking_line
+#: model:ir.ui.menu,name:dental_clinic.booking_line_actions
+msgid "Booking Patients"
+msgstr "حجوزات المرضى"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_pivot
+msgid "Bookings Pivot"
+msgstr "حجوزات المحور"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__code
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_search
+#, python-format
+msgid "Code"
+msgstr "رمز"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields.selection,name:dental_clinic.selection__booking_line__state__consultation
+#, python-format
+msgid "Consultation"
+msgstr "الاستشارة"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__cost
+#, python-format
+msgid "Cost"
+msgstr "التكلفة"
+
+#. module: dental_clinic
+#: model:ir.actions.act_window,name:dental_clinic.action_cost_examination
+#: model:ir.ui.menu,name:dental_clinic.cost_examination_action
+msgid "Cost Examination"
+msgstr "تكلفة الكشف"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__cost_of_examination
+#, python-format
+msgid "Cost Of Examination"
+msgstr "تكلفة الكشف"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__create_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__create_date
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__create_date
+msgid "Created on"
+msgstr "تم إنشاؤه في"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "Data"
+msgstr "البيانات"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__date
+#, python-format
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__name
+#, python-format
+msgid "Day"
+msgstr "اليوم"
+
+#. module: dental_clinic
+#: model:ir.module.category,name:dental_clinic.patient_category
+#: model:ir.ui.menu,name:dental_clinic.dental_clinic_cat
+msgid "Dental Clinic"
+msgstr "عيادة الأسنان"
+
+#. module: dental_clinic
+#: model:res.groups,name:dental_clinic.dental_clinic_manager_groups
+msgid "Dental Clinic Manager"
+msgstr "مدير العيادة"
+
+#. module: dental_clinic
+#: model:res.groups,name:dental_clinic.dental_clinic_reception_groups
+msgid "Dental Clinic Reception"
+msgstr "استقبال العيادة"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/treatment_prescription.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__des
+#, python-format
+msgid "Description"
+msgstr "الوصف"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "Diagnoses"
+msgstr "التشخيصات"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__difference
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__difference
+#, python-format
+msgid "Difference"
+msgstr "الفرق"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__display_name
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: dental_clinic
+#: model:ir.ui.menu,name:dental_clinic.doctor_actions
+msgid "Doctor"
+msgstr "الطبيب"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields.selection,name:dental_clinic.selection__booking_line__state__done
+#: model:ir.model.fields.selection,name:dental_clinic.selection__patient_patient__state__done
+#, python-format
+msgid "Done"
+msgstr "تم"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__check_examination
+#: model:ir.model.fields.selection,name:dental_clinic.selection__patient_patient__state__examination
+#, python-format
+msgid "Examination"
+msgstr "الكشف"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__check_amount
+#, python-format
+msgid "Examination Cost"
+msgstr "تكلفة الكشف"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__pay
+#, python-format
+msgid "Financial budget"
+msgstr "الميزانية المالية"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields.selection,name:dental_clinic.selection__patient_patient__state__follow_up
+#, python-format
+msgid "Follow-up"
+msgstr "متابعة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_follower_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_follower_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_follower_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_partner_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_partner_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_partner_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__activity_type_icon
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__activity_type_icon
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__activity_type_icon
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة الخط"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.actions.act_window,name:dental_clinic.actions_general_diagnosis
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__patient_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__general_diagnosis_id
+#: model:ir.ui.menu,name:dental_clinic.general_diagnosis_action
+#, python-format
+msgid "General Diagnosis"
+msgstr "التشخيص العام"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__has_message
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__has_message
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__has_message
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__has_message
+msgid "Has Message"
+msgstr "به رسالة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__id
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__id
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__id
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__id
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__id
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__id
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__id
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__id
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__id
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__id
+msgid "ID"
+msgstr "رقم التعريف"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_exception_icon
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_exception_icon
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_exception_icon
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_exception_icon
+msgid "Icon"
+msgstr "رمز"
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__activity_exception_icon
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__activity_exception_icon
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__activity_exception_icon
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثناء."
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__message_needaction
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__message_needaction
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__message_needaction
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديد هذا المربع، فإن الرسائل الجديدة تتطلب اهتمامك."
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__message_has_error
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__message_has_error
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__message_has_error
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديد هذا المربع، فهذا يعني أن بعض الرسائل بها خطأ في التسليم."
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_is_follower
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_is_follower
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_is_follower
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__job_id
+#, python-format
+msgid "Job"
+msgstr "الوظيفة"
+
+#. module: dental_clinic
+#: model:ir.actions.act_window,name:dental_clinic.actions_job_job
+#: model:ir.ui.menu,name:dental_clinic.job_job_action
+msgid "Jobs"
+msgstr "الوظائف"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth____last_update
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__write_uid
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_cost_examination__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__write_date
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_main_attachment_id
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_main_attachment_id
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "الملحق الرئيسي"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.actions.act_window,name:dental_clinic.actions_medical_history
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__medical_history_ids
+#: model:ir.ui.menu,name:dental_clinic.medical_history_action
+#, python-format
+msgid "Medical History"
+msgstr "التاريخ الطبي"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/treatment_prescription.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__name
+#, python-format
+msgid "Medicine Name"
+msgstr "اسم الدواء"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_has_error
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_has_error
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_has_error
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_ids
+msgid "Messages"
+msgstr "رسالة"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__month
+#, python-format
+msgid "Month"
+msgstr "الشهر"
+
+#. module: dental_clinic
+#: model:ir.actions.act_window,name:dental_clinic.action_booking_booking_manager
+#: model:ir.ui.menu,name:dental_clinic.booking_manager_actions
+msgid "Monthly reservations"
+msgstr "الحجوزات الشهرية"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "Move"
+msgstr "للأمام"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__my_activity_date_deadline
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__my_activity_date_deadline
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__my_activity_date_deadline
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/models.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__patients_id
+#: model:ir.model.fields,field_description:dental_clinic.field_general_diagnosis__name
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__name
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__name
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__name
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_search
+#, python-format
+msgid "Name"
+msgstr "الأسم"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_date_deadline
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_date_deadline
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_date_deadline
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_summary
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_summary
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_summary
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_type_id
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_type_id
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_type_id
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__phone
+#, python-format
+msgid "Number"
+msgstr "رقم التلفون"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_needaction_counter
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_needaction_counter
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_needaction_counter
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__message_has_error_counter
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__message_has_error_counter
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__message_has_error_counter
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__message_needaction_counter
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__message_needaction_counter
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__message_needaction_counter
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__message_has_error_counter
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__message_has_error_counter
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__message_has_error_counter
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_job_job__patient_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__patient_id
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__patient_id
+#, python-format
+msgid "Patient"
+msgstr "المريض"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.actions.act_window,name:dental_clinic.action_patient_patient
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__booking_line_ids
+#: model:ir.model.fields,field_description:dental_clinic.field_medical_history__patient_ids
+#: model:ir.ui.menu,name:dental_clinic.patient_action
+#: model:ir.ui.menu,name:dental_clinic.patients_action
+#, python-format
+msgid "Patients"
+msgstr "المرضى"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__pay
+#, python-format
+msgid "Pay"
+msgstr "دفع"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__person
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__person
+#, python-format
+msgid "Person"
+msgstr "الشخص"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_search
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__des
+#, python-format
+msgid "Problem"
+msgstr "المشكلة"
+
+#. module: dental_clinic
+#: model:ir.actions.act_window,name:dental_clinic.action_booking_booking
+#: model:ir.ui.menu,name:dental_clinic.bookings_action
+msgid "Reservations"
+msgstr "الحجزات"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__activity_user_id
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__activity_user_id
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__activity_user_id
+#: model:ir.model.fields,field_description:dental_clinic.field_treatment_prescription__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_search
+msgid "Search Patients"
+msgstr "البحث عن المرضى"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__state
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__state
+#, python-format
+msgid "State"
+msgstr "الحالة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__activity_state
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__activity_state
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__activity_state
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد انقضى\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"المخطط: أنشطة مستقبلية."
+
+#. module: dental_clinic
+#: model:ir.ui.menu,name:dental_clinic.system_actions
+msgid "System"
+msgstr "النظام"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__user_id
+msgid "System User"
+msgstr "مستخدم نظام"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.actions.act_window,name:dental_clinic.action_teeth_teeth
+#: model:ir.actions.act_window,name:dental_clinic.action_tooth_tooth
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__teeth_ids
+#: model:ir.ui.menu,name:dental_clinic.tooth_action
+#, python-format
+msgid "Teeth"
+msgstr "الاسنان"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_treatment_prescription
+msgid "Therapeutic Prescription"
+msgstr "الوصفة العلاجية"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__teeth_code
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__name
+#, python-format
+msgid "Tooth Code"
+msgstr "رمز السنه"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_teeth_teeth__teeth_title
+#, python-format
+msgid "Tooth Name"
+msgstr "اسم السنه"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_tooth_tooth__title
+#, python-format
+msgid "Tooth Title"
+msgstr "اسم السنه"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__total_cost
+#, python-format
+msgid "Total Cost"
+msgstr "التكلفة الكلية"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__difference_total
+msgid "Total Difference"
+msgstr "الفرق الكلي"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__patients_total
+msgid "Total Disclosures"
+msgstr "عدد الكشوفات"
+
+#. module: dental_clinic
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_booking__line_pay_total
+msgid "Total Pay"
+msgstr "البلغ الكلي "
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "Treatment"
+msgstr "الروشتة"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_patient_patient__treatment_prescription_ids
+#, python-format
+msgid "Treatment Prescription"
+msgstr "الروشتة"
+
+#. module: dental_clinic
+#: model:ir.model.fields,help:dental_clinic.field_booking_booking__activity_exception_decoration
+#: model:ir.model.fields,help:dental_clinic.field_booking_line__activity_exception_decoration
+#: model:ir.model.fields,help:dental_clinic.field_patient_patient__activity_exception_decoration
+#: model:ir.model.fields,help:dental_clinic.field_treatment_prescription__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي المسجل."
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields.selection,name:dental_clinic.selection__booking_line__state__waiting
+#, python-format
+msgid "Waiting"
+msgstr "ينتظر"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_booking_booking
+msgid "booking.booking"
+msgstr "الحجزات"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_booking_line
+msgid "booking.line"
+msgstr "الحجزات"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_form
+msgid "booking_form"
+msgstr "نموزج الحجزات"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_tree
+msgid "booking_tree"
+msgstr "جدول الحجزات"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_cost_examination
+msgid "cost.examination"
+msgstr "تكلفة الفحص"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_cost_examination_form
+msgid "cost_examination_form"
+msgstr "تكلفة الفحص"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#: model:ir.model.fields,field_description:dental_clinic.field_booking_line__des
+#, python-format
+msgid "description"
+msgstr "الوصف"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_form
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "difference"
+msgstr "الفرق"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_general_diagnosis
+msgid "general.diagnosis"
+msgstr "التشخيص العام"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_job_job
+msgid "job.job"
+msgstr "الوظائف"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_medical_history
+msgid "medical.history"
+msgstr "التاريخ الطبي"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_patient_patient
+msgid "patient.patient"
+msgstr "المريض"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "patient_form"
+msgstr "نموزج المريض"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_form
+msgid "pay"
+msgstr "دفع"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_teeth_teeth
+msgid "teeth.teeth"
+msgstr "الأسنان"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_teeth_teeth_form
+msgid "teeth_form"
+msgstr "نموزج الأسنان"
+
+#. module: dental_clinic
+#: model:ir.model,name:dental_clinic.model_tooth_tooth
+msgid "tooth.tooth"
+msgstr "نموزج الأسنان"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_tooth_tooth_form
+msgid "tooth_form"
+msgstr "نموذج السنه"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_form
+msgid "total_cost"
+msgstr "تكلفة الكلية"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/models.py:0
+#, python-format
+msgid "⚠️ Birth date must be in the past."
+msgstr "⚠️ يجب أن يكون تاريخ الميلاد في الماضي."
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#, python-format
+msgid "⚠️ Cost can only be a positive number."
+msgstr "⚠️ التكلفة لا يمكن أن تكون إلا رقمًا موجبًا."
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#, python-format
+msgid "⚠️ Pay can only be a positive number."
+msgstr "⚠️ لا يمكن أن يكون الأجر إلا رقمًا موجبًا."
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#, python-format
+msgid "⚠️ Teeth Code should be positive number and smaller than 33."
+msgstr "⚠️ يجب أن يكون رمز الأسنان رقمًا موجبًا وأصغر من 33."
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/booking.py:0
+#, python-format
+msgid ""
+"⚠️ The date has already been registered. \n"
+" You cannot register again."
+msgstr  "⚠️ لقد تم تسجيل التاريخ بالفعل \n لا يمكنك التسجيل مرة أخرى"
+
+#. module: dental_clinic
+#. odoo-python
+#: code:addons/dental_clinic/models/system.py:0
+#: code:addons/dental_clinic/models/system.py:0
+#, python-format
+msgid "⚠️ Tooth Code should be positive number and smaller than 33."
+msgstr "⚠️ يجب أن يكون رمز السن رقمًا موجبًا وأصغر من 33."
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_kanban
+msgid "👤 Person:"
+msgstr "👤 الشخص:"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_kanban
+msgid "👥 booking:"
+msgstr "👥 الحجزات:"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_kanban
+msgid "💰 Difference:"
+msgstr "💰 الفرق:"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_kanban
+msgid "💰 Financial budget:"
+msgstr "💰 الميزانية المالية:"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_booking_booking_kanban
+msgid "📅 Day:"
+msgstr "📅 اليوم:"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_kanban
+msgid "📱 Phone:"
+msgstr "📱 الهاتف:"
+
+#. module: dental_clinic
+#: model_terms:ir.ui.view,arch_db:dental_clinic.view_patient_patient_kanban
+msgid "🧾 General Diagnosis:"
+msgstr "🧾 التشخيص العام:"

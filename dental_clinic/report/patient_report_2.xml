@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+
+        <record id="patient_zero_margin_2" model="report.paperformat">
+            <field name="name">A4 Zero Margin</field>
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">0</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_spacing">0</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <record id="patient_report_2" model="ir.actions.report">
+            <field name="name">Patient Treatment 2</field>
+            <field name="model">patient.patient</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="binding_model_id" ref="model_patient_patient"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="patient_zero_margin_2"/>
+            <field name="report_name">dental_clinic.report_patient_prescription_2</field>
+            <field name="report_file">dental_clinic.report_patient_prescription_2</field>
+        </record>
+
+    </data>
+</odoo>
+

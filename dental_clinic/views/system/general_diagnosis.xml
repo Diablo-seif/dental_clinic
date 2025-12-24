@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+
+    <record id="views_general_diagnosis_form" model="ir.ui.view">
+        <field name="name">general_diagnosis_form</field>
+        <field name="model">general.diagnosis</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+      <record id="actions_general_diagnosis" model="ir.actions.act_window">
+          <field name="name">General Diagnosis</field>
+          <field name="res_model">general.diagnosis</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+
+
+
+  </data>
+</odoo>

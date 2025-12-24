@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+
+
+      <menuitem id="dental_clinic_cat" name="Dental Clinic"  web_icon="dental_clinic,static/description/icon.png" sequence="1"/>
+
+
+            <menuitem id="bookings_action" name="Reservations" parent="dental_clinic_cat" action="action_booking_booking"  sequence="10"/>
+
+            <menuitem id="patient_action" name="Patients" parent="dental_clinic_cat"  action="action_patient_patient"  sequence="20"/>
+
+            <menuitem id="system_actions" name="System"      parent="dental_clinic_cat"    sequence="30" groups="dental_clinic.dental_clinic_manager_groups"/>
+
+
+                    <menuitem id="doctor_actions"     name="Doctor"       parent="system_actions"    sequence="10" />
+
+                                    <menuitem id="cost_examination_action"  name="Cost Examination"   parent="doctor_actions"  action="action_cost_examination"    sequence="10" />
+                                    <menuitem id="general_diagnosis_action" name="General Diagnosis"  parent="doctor_actions"  action="actions_general_diagnosis"  sequence="20" />
+                                    <menuitem id="tooth_action"             name="Teeth"              parent="doctor_actions"  action="action_tooth_tooth"         sequence="30" />
+
+                    <menuitem id="patients_action"    name="Patients"     parent="system_actions"    sequence="20" />
+                                    <menuitem id="job_job_action"          name="Jobs"                   parent="patients_action"  action="actions_job_job"                 sequence="20" />
+                                    <menuitem id="medical_history_action"  name="Medical History"        parent="patients_action"  action="actions_medical_history"         sequence="30" />
+                                    <menuitem id="dashboard_views_actions" name="Dashboard"              parent="patients_action"  action="action_dashboard"        sequence="90" />
+
+  </data>
+</odoo>

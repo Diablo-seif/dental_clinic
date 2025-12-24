@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="view_booking_line_form" model="ir.ui.view">
+            <field name="name">booking_line_form</field>
+            <field name="model">booking.line</field>
+            <field name="arch" type="xml">
+                <form string="Booking Line">
+                    <sheet>
+                        <group>
+                            <field name="num"/>
+                            <field name="des"/>
+                            <field name="state"/>
+                            <field name="cost"/>
+                            <field name="total_cost"/>
+                            <field name="pay"/>
+                            <field name="difference"/>
+                            <field name="patients_id"/>
+                            <field name="person"/>
+                            <field name="booking_id"/>
+                            <field name="check_examination"/>
+                            <field name="check_amount"/>
+                            <field name="doctor_id"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_booking_line_tree" model="ir.ui.view">
+            <field name="name">booking_line_tree</field>
+            <field name="model">booking.line</field>
+            <field name="arch" type="xml">
+                <tree string="Booking Lines">
+                    <field name="num"/>
+                    <field name="patients_id"/>
+                    <field name="cost"/>
+                    <field name="pay"/>
+                    <field name="difference"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="actions_booking_line" model="ir.actions.act_window">
+            <field name="name">Booking Patients</field>
+            <field name="res_model">booking.line</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

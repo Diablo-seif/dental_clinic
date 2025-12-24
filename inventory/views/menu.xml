@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+
+
+      <menuitem id="inventory_cat" name="Inventory Clinic"  web_icon="dental_clinic,static/description/icon.png" sequence="1"/>
+
+
+<!--            <menuitem id="patient_action" name="Patients" parent="dental_clinic_cat"  action="action_patient_patient"  sequence="10"/>-->
+            <menuitem id="product_action" name="Product" parent="inventory_cat"  action="action_product_inventory"  sequence="20"/>
+            <menuitem id="vendor_action"  name="Vendor" parent="inventory_cat" action="action_vendor_inventory"  sequence="30"/>
+
+
+
+  </data>
+</odoo>

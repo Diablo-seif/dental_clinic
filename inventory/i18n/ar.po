@@ -1,0 +1,596 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-01 11:46+0000\n"
+"PO-Revision-Date: 2025-09-01 11:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_needaction
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_needaction
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_ids
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_ids
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_exception_decoration
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_exception_decoration
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_state
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_state
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_type_icon
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_type_icon
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_attachment_count
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_attachment_count
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/vendor.py:0
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__company_name
+#, python-format
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__consumption
+#, python-format
+msgid "Consumption"
+msgstr "الاستهلاك"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__cost
+#, python-format
+msgid "Cost"
+msgstr "تكلفة"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__create_uid
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__create_uid
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__create_date
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__create_date
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__date_of_receipt
+#, python-format
+msgid "Date of Receipt"
+msgstr "تاريخ الاستلام"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__difference
+#, python-format
+msgid "Difference"
+msgstr "الفرق"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__display_name
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__display_name
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__expiration_date
+#, python-format
+msgid "Expiration Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/vendor.py:0
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__phone
+#, python-format
+msgid "Fist Number"
+msgstr "الرقم"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_follower_ids
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_follower_ids
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_partner_ids
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_partner_ids
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين (الشركاء)"
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__activity_type_icon
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__activity_type_icon
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields.selection,name:inventory.selection__product_inventory__measurement_type__gram
+#, python-format
+msgid "Gram"
+msgstr "جرام"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__has_message
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__has_message
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__has_message
+msgid "Has Message"
+msgstr "به رسائل"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__id
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__id
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__id
+msgid "ID"
+msgstr "رمز الهوية"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_exception_icon
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_exception_icon
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_exception_icon
+msgid "Icon"
+msgstr "ايقونة"
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__activity_exception_icon
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__activity_exception_icon
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة تشير إلى نشاط استثنائي."
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__message_needaction
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__message_needaction
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديده، فهذا يعني أن هناك رسائل جديدة تتطلب انتباهك."
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__message_has_error
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__message_has_error
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده، فهذا يعني أن بعض الرسائل بها خطأ في التسليم."
+
+#. module: inventory
+#: model:ir.module.category,name:inventory.inventory_category
+#: model:ir.ui.menu,name:inventory.inventory_cat
+msgid "Inventory Clinic"
+msgstr "المخزون"
+
+#. module: inventory
+#: model:res.groups,name:inventory.inventory_clinic_manager_groups
+msgid "Inventory Clinic Manager"
+msgstr "مدير المخزون"
+
+#. module: inventory
+#: model:res.groups,name:inventory.inventory_clinic_user_groups
+msgid "Inventory Clinic User"
+msgstr "مستخدم المخزون"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_is_follower
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_is_follower
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_is_follower
+msgid "Is Follower"
+msgstr "هل هو متابع"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields.selection,name:inventory.selection__product_inventory__measurement_type__kilogram
+#, python-format
+msgid "Kilogram"
+msgstr "كيلوجرام"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory____last_update
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line____last_update
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__write_uid
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__write_uid
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__write_date
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__write_date
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields.selection,name:inventory.selection__product_inventory__measurement_type__liter
+#, python-format
+msgid "Liter"
+msgstr "لتر"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_main_attachment_id
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__measurement_type
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__measurement_types
+#, python-format
+msgid "Measurement Type"
+msgstr "نوع القياس"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_has_error
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_has_error
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_ids
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_ids
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields.selection,name:inventory.selection__product_inventory__measurement_type__milliliter
+#, python-format
+msgid "Milli Liter"
+msgstr "ملي لتر"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__my_activity_date_deadline
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__my_activity_date_deadline
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_inventory_search
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_search
+msgid "Name"
+msgstr "الأسم"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_date_deadline
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_date_deadline
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_summary
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_summary
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_type_id
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_type_id
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_needaction_counter
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_needaction_counter
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__message_has_error_counter
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__message_has_error_counter
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__message_needaction_counter
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__message_needaction_counter
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__message_has_error_counter
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__message_has_error_counter
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__pay
+#, python-format
+msgid "Pay"
+msgstr "دفع"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_search
+msgid "Phone"
+msgstr "هاتف"
+
+#. module: inventory
+#: model:ir.ui.menu,name:inventory.product_action
+msgid "Product"
+msgstr "المنتج"
+
+#. module: inventory
+#: model:ir.model,name:inventory.model_product_inventory
+msgid "Product Inventory"
+msgstr "مخزون المنتج"
+
+#. module: inventory
+#: model:ir.model,name:inventory.model_product_inventory_line
+msgid "Product Inventory Line"
+msgstr "مخزون المنتج"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__name
+#, python-format
+msgid "Product Name"
+msgstr "اسم المنتج"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: code:addons/inventory/models/vendor.py:0
+#: model:ir.actions.act_window,name:inventory.action_product_inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__product_id
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__products_ids
+#, python-format
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__quantity
+#, python-format
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__activity_user_id
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__activity_user_id
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_inventory_search
+msgid "Search inventory"
+msgstr "بحث في المخزون"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_search
+msgid "Search vendors"
+msgstr "موردين"
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__activity_state
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__activity_state
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مضى\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__total_cost
+#, python-format
+msgid "Total Cost"
+msgstr "إجمالي التكلفة"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__total_quantity
+#, python-format
+msgid "Total Quantity"
+msgstr "إجمالي الكمية"
+
+#. module: inventory
+#: model:ir.model.fields,help:inventory.field_product_inventory__activity_exception_decoration
+#: model:ir.model.fields,help:inventory.field_product_inventory_line__activity_exception_decoration
+#: model:ir.model.fields,help:inventory.field_vendor_inventory__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields.selection,name:inventory.selection__product_inventory__measurement_type__unit
+#, python-format
+msgid "Unit"
+msgstr "الوحدة"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.model.fields,field_description:inventory.field_product_inventory_line__vendor_id
+#: model:ir.ui.menu,name:inventory.vendor_action
+#, python-format
+msgid "Vendor"
+msgstr "المورد"
+
+#. module: inventory
+#: model:ir.model,name:inventory.model_vendor_inventory
+msgid "Vendor Inventory"
+msgstr "مخزون المورد"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/vendor.py:0
+#: model:ir.model.fields,field_description:inventory.field_vendor_inventory__name
+#, python-format
+msgid "Vendor Name"
+msgstr "اسم المورد"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#: model:ir.actions.act_window,name:inventory.action_vendor_inventory
+#: model:ir.model.fields,field_description:inventory.field_product_inventory__vendors_ids
+#, python-format
+msgid "Vendors"
+msgstr "الموردين"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_form
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_form
+msgid "difference"
+msgstr "الفرق"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_form
+msgid "inventory_form"
+msgstr "نموذج_المخزون"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_form
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_form
+msgid "pay"
+msgstr "دفع"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_form
+msgid "products"
+msgstr "المنتجات"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_form
+msgid "quantity"
+msgstr "كمية"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_form
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_form
+msgid "total_cost"
+msgstr "التكلفة الكلية"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_form
+msgid "vendor_form"
+msgstr "المورد"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_form
+msgid "vendors"
+msgstr "الموردين"
+
+#. module: inventory
+#. odoo-python
+#: code:addons/inventory/models/product.py:0
+#, python-format
+msgid "⚠️ Total Quantity should be positive number\n  consumption is not True"
+msgstr "⚠️ يجب أن يكون إجمالي الكمية عددًا موجبًا \n  الاستهلاك ليس صحيحًا"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_kanban
+msgid "👤 Person:"
+msgstr "👤 الشخص:"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_kanban
+msgid "💊 Product:"
+msgstr "💊 المنتج:"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_kanban
+msgid "💼 Company:"
+msgstr "💼 الشركة:"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_kanban
+msgid "📊 Consumption:"
+msgstr "📊 الاستهلاك:"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_product_inventory_kanban
+msgid "📦 Total Quantity:"
+msgstr "📦 إجمالي الكمية:"
+
+#. module: inventory
+#: model_terms:ir.ui.view,arch_db:inventory.view_vendor_inventory_kanban
+msgid "📱 Phone:"
+msgstr "📱 الهاتف:"

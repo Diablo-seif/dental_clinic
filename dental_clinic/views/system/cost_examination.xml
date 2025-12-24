@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+
+
+        <record id="view_cost_examination_form" model="ir.ui.view">
+            <field name="name">cost_examination_form</field>
+            <field name="model">cost.examination</field>
+            <field name="arch" type="xml">
+                <form string="cost_examination_form">
+                    <sheet>
+                        <group>
+                                    <field name="cost_of_examination"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+      
+      
+      
+        <record id="action_cost_examination" model="ir.actions.act_window">
+          <field name="name">Cost Examination</field>
+          <field name="res_model">cost.examination</field>
+          <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+
+
+  </data>
+</odoo>

@@ -1,0 +1,105 @@
+<odoo>
+  <data>
+
+        <record id="view_product_inventory_form" model="ir.ui.view">
+                <field name="name">product.inventory.form</field>
+                <field name="model">product.inventory</field>
+                <field name="arch" type="xml">
+                    <form string="inventory_form">
+                        <sheet>
+                                        <group>
+                                              <group> <field name="name"/> </group>
+                                        </group>
+                                        <group>
+                                              <group> <field name="consumption"/>
+                                              <field name="measurement_type"/></group>
+                                              <group> <field name="total_quantity"/> </group>
+                                        </group>
+
+                                            <separator string="vendors"/>
+                                            <field name="vendors_ids">
+                                                <tree editable="bottom">
+                                                    <field name="vendor_id"/>
+                                                    <field name="date_of_receipt" optional="1" />
+                                                    <field name="expiration_date" optional="1" />
+                                                    <field name="quantity" sum="quantity"/>
+                                                    <field name="cost" />
+                                                    <field name="total_cost" sum="total_cost"/>
+                                                    <field name="pay" sum="pay"/>
+                                                    <field name="difference" sum="difference"/>
+                                                </tree>
+                                            </field>
+
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+        <record id="view_product_inventory_tree" model="ir.ui.view">
+            <field name="name">product.inventory.tree</field>
+            <field name="model">product.inventory</field>
+            <field name="arch" type="xml">
+                  <tree>
+                        <field name="name"/>
+                        <field name="consumption"/>
+                        <field name="total_quantity"/>
+                  </tree>
+              </field>
+          </record>
+
+
+
+
+        <record id="view_product_inventory_kanban"   model="ir.ui.view">
+            <field name="name">product.inventory.kanban</field>
+            <field name="model">product.inventory</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_example">
+                        <field name="name"/>
+                        <field name="consumption"/>
+                        <field name="total_quantity"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_kanban_card">
+                                <div class="o_kanban_content">
+
+                                        <div style="margin-bottom:4px;">
+                                              💊 Product:  <field name="name"/>
+                                        </div>
+
+
+                                        <div style="margin-bottom:4px;">
+                                                📊 Consumption: <field name="consumption"/>
+                                        </div>
+
+                                        <div>
+                                                📦 Total Quantity: <field name="total_quantity"/>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+    </record>
+
+        <record id="view_inventory_search" model="ir.ui.view">
+            <field name="name">product.inventory.search</field>
+            <field name="model">product.inventory</field>
+            <field name="arch" type="xml">
+                <search string="Search inventory">
+                    <!-- Search fields -->
+                    <field name="name" string="Name"/>
+                </search>
+            </field>
+        </record>
+
+          <record id="action_product_inventory" model="ir.actions.act_window">
+          <field name="name">Products</field>
+          <field name="res_model">product.inventory</field>
+          <field name="view_mode">kanban,tree,form</field>
+      </record>
+
+  </data>
+</odoo>

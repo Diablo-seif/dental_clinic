@@ -1,0 +1,124 @@
+<odoo>
+  <data>
+
+        <record id="view_booking_booking_form"   model="ir.ui.view">
+            <field name="name">booking_booking_form</field>
+            <field name="model">booking.booking</field>
+            <field name="arch" type="xml">
+                <form string="form">
+                    <sheet>
+                        <group string="Day">
+                                <group>
+                                        <label for ="name"/>
+                                        <h1>  <field name="name"/> </h1>
+                                </group>
+                                <group>
+                                        <label for ="date"/>
+                                        <h1>  <field name="date"/> </h1>
+                                </group>
+                            </group>
+
+                            <notebook>
+                                    <page string="Booking">
+                                        <field name="booking_line_ids">
+                                            <tree editable="bottom">
+                                                <field name="num"/>
+                                                <field name="patients_id"/>
+                                                <field name="state"/>
+<!--                                                <field name="doctor_id" optional="1"/>-->
+                                                <field name="check_examination"/>
+                                                <field name="check_amount" readonly="1"/>
+                                                <field name="des" />
+                                                <field name="cost"/>
+                                                <field name="total_cost" readonly="1"/>
+                                                <field name="pay"/>
+                                                <field name="difference"/>
+                                            </tree>
+                                        </field>
+                                    </page>
+                                    <page string="Financial">
+                                        <div class="o_kanban_content">
+                                            <div class="d-flex" style="gap: 200px;">
+                                                <div style="margin: 0 0  0 100px;"> 💵 Cost: <field name="cost_total"/> </div>
+                                                <div style="margin: 0 0  0 0;"> 💰 Budget Pay: <field name="pay"/> </div>
+                                                <div style="margin: 0 0  0 0;"> ⚖️ Difference: <field name="difference_total"/> </div>
+
+                                            </div>
+                                        </div>
+                                    </page>
+
+                            </notebook>
+
+                    </sheet>
+                    <div class="oe_chatter" groups="dental_clinic.dental_clinic_manager_groups">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_booking_booking_tree" model="ir.ui.view">
+            <field name="name">booking.booking.tree</field>
+            <field name="model">booking.booking</field>
+            <field name="arch" type="xml">
+                <tree string="booking_tree">
+                    <field name="name"/>
+                    <field name="booking_line_ids" widget="badge"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_booking_booking_kanban" model="ir.ui.view">
+            <field name="name">booking.booking.kanban</field>
+            <field name="model">booking.booking</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_example">
+                    <field name="name"/>
+                     <field name="booking_line_ids"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_kanban_card">
+                                <div class="o_kanban_content">
+                                    <div>
+                                        📅 Day: <field name="name"/>
+                                    </div>
+                                    <div>
+                                        👥 booking: <field name="booking_line_ids"/>
+                                    </div>
+                            </div>
+                        </div>
+
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+    </record>
+
+        <record id="view_booking_booking_pivot"  model="ir.ui.view">
+        <field name="name">booking.booking.pivot</field>
+        <field name="model">booking.booking</field>
+            <field name="arch" type="xml">
+                <pivot string="Bookings Pivot">
+                        <field name="month" type="row"/>
+                        <field name="patients_total" type="measure"/>
+                        <field name="pay" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record id="action_booking_booking"      model="ir.actions.act_window">
+          <field name="name">Reservations</field>
+          <field name="res_model">booking.booking</field>
+          <field name="view_mode">tree,kanban,form</field>
+        </record>
+
+        <record id="action_booking_booking_manager"      model="ir.actions.act_window">
+          <field name="name">Monthly reservations</field>
+          <field name="res_model">booking.booking</field>
+          <field name="view_mode">pivot,kanban,tree,form</field>
+        </record>
+
+  </data>
+</odoo>
